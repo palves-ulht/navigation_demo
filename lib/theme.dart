@@ -35,6 +35,8 @@ ThemeData buildThemeData() {
       enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.black87)),
       labelStyle: TextStyle(color: Colors.black),
       prefixIconColor: Colors.black,
+      focusedErrorBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.red)),
+      errorBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.red)),
     )
   );
 }

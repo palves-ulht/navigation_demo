@@ -9,7 +9,7 @@ class PersonPage extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
 
     final favoritesModel = ref.watch(favoritesModelProvider);
-    final firstName = favoritesModel.names.isEmpty ? "" : favoritesModel.names[favoritesModel.names.length-1];
+    final firstName = favoritesModel.favorites.isEmpty ? "" : favoritesModel.favorites[favoritesModel.favorites.length-1].name;
 
     return Scaffold(
         appBar: AppBar(title: Text('Person')),
